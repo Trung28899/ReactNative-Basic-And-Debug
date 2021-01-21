@@ -49,33 +49,40 @@
 
 ## II. Module Notes:
 
-1.  2nd Commit:
+1.  3rd Commit:
+    (Video 1 - 25)
 
-    - Content:
-      +, Components and Styling in React Native
-      +, Flexbox in React Native
+        - Content:
+          +, Components and Styling in React Native
+          +, Flexbox in React Native
 
-    a. Component and Styling in React Native:
+        a. Component and Styling in React Native:
 
-         - React Native has its own core component that looks
-             like HTML but it's not HTML
+             - React Native has its own core component that looks
+                 like HTML but it's not HTML
 
-         - Look for 'How Does React Native Work' above
+             - Look for 'How Does React Native Work' above
 
-         - See App.js to see styling convention:
-             +, CSS is not understood by React Native
-             +, So React Native has its own convention for Styling that looks similiar to CSS
+             - See App.js to see styling convention:
+                 +, CSS is not understood by React Native
+                 +, So React Native has its own convention for Styling that looks similiar to CSS
 
-    b. Flexbox in React Native:
+        b. Flexbox in React Native:
 
-        - Recommend reviewing Flexbox in Web Development
-            to easier understand Flexbox in React Native
+            - Recommend reviewing Flexbox in Web Development
+                to easier understand Flexbox in React Native
 
-        - See App.js, notice the following fields:
-            +, flexDirection
-            +, justifyContent
-            +, alignItems
-            +, flex
+            - Flexbox is the default styling / layout behavior of a <View> component
 
-        - See video 25 or the link down below for further info:
-        https://reactnative.dev/docs/flexbox
+            - See App.js, notice the following fields:
+                +, flexDirection
+                +, justifyContent
+                +, alignItems
+                +, flex
+
+            - See video 25 or the link down below for further info:
+            https://reactnative.dev/docs/flexbox
+
+2.  4th Commit: StyleSheet Objects
+
+    - See App.js
