@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, TextInput, Button } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  Button,
+  ScrollView,
+} from "react-native";
 
 export default function App() {
   const [enteredGoal, setEnteredGoal] = useState("");
@@ -10,14 +17,8 @@ export default function App() {
   };
 
   const addGoalHandler = () => {
-    console.log(enteredGoal);
-    /*
-      Can go with this 
-      setCourseGoals([...courseGoals, enteredGoal]); 
-
-      But the syntax down below is a better practice
-      when it come to state syncability
-    */
+    // console.log(enteredGoal);
+    // Best practice for Sync-ability
     setCourseGoals((currentGoals) => [...currentGoals, enteredGoal]);
   };
 
@@ -32,7 +33,13 @@ export default function App() {
         />
         <Button title="ADD" onPress={addGoalHandler} />
       </View>
-      <View />
+      <ScrollView>
+        {courseGoals.map((goal, index) => (
+          <View key={index} style={styles.listItem}>
+            <Text>{goal}</Text>
+          </View>
+        ))}
+      </ScrollView>
     </View>
   );
 }
@@ -52,5 +59,12 @@ const styles = StyleSheet.create({
     borderColor: "black",
     borderWidth: 1,
     padding: 10,
+  },
+  listItem: {
+    padding: 10,
+    marginVertical: 10,
+    backgroundColor: "#ccc",
+    borderColor: "black",
+    borderWidth: 1,
   },
 });

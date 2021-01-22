@@ -95,8 +95,15 @@
 
 3.  5th Commit: State and Events Management
 
-    - See App.js
+    - See App.js, Video 27
     - Notice the following:
       +, console.log() > will log content to VSCode terminal
       +, Events: onChangeText, onPress
     - Managing State
+
+4. 6th Commit: Rendering List
+
+    - See App.js, Video 28 - 30
+    - Notice how to render list just like React.js
+        (Key and Content with different Components)
+    - Notice ScrollView: this allow the list to be scrollable
