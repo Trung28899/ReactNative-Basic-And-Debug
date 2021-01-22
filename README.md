@@ -85,4 +85,18 @@
 
 2.  4th Commit: StyleSheet Objects
 
+    - StyleSheet Objects currently is no different than
+      JavaScript Object. But in the future, this may
+      bring more optimized performance to the application.
+
+      => Doesn't hurt to use and good practice
+
+    - See App.js, Video 26
+
+3.  5th Commit: State and Events Management
+
     - See App.js
+    - Notice the following:
+      +, console.log() > will log content to VSCode terminal
+      +, Events: onChangeText, onPress
+    - Managing State
