@@ -101,9 +101,20 @@
       +, Events: onChangeText, onPress
     - Managing State
 
-4. 6th Commit: Rendering List
+4.  6th Commit: Rendering List
 
     - See App.js, Video 28 - 30
     - Notice how to render list just like React.js
-        (Key and Content with different Components)
+      (Key and Content with different Components)
     - Notice ScrollView: this allow the list to be scrollable
+
+5.  7th Commit: FlatList
+
+    - Other way of rendering list
+    - Better performance than ScrollView when it comes
+      to a really long list
+    - Things to notice:
+      +, Data array has to have a key item and value item in any child
+      +, keyExtractor extract the key data to automatically
+      assign keys to children
+    - See App.js, Video 31
