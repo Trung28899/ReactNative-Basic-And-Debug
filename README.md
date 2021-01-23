@@ -118,3 +118,18 @@
       +, keyExtractor extract the key data to automatically
       assign keys to children
     - See App.js, Video 31
+
+6.  8th Commit:
+    Splitting Code into Components and working with Touchable Components
+
+- Splitting Code into Components:
+  +, See ./components/GoalItem.js and ./components/GoalInput.js:
+  +, See how to pass and manipulate data between components
+
+- Working with Touchable Components:
+  +, onPress event doesn't works on every components
+  +, We oftenly use Touchable components
+  wrap around the View to handle the press event
+  +, See ./components/GoalItem.js
+  +, With TouchableOpacity, we are able to set activeOpacity
+  which is the opacity when item is clicked
