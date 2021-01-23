@@ -1,17 +1,19 @@
 import React from "react";
-import { View, TextInput, StyleSheet, Button } from "react-native";
+import { View, TextInput, StyleSheet, Button, Modal } from "react-native";
 
-const GoalInput = ({ onChange, onAdd, enteredGoal }) => {
+const GoalInput = ({ onChange, onAdd, enteredGoal, visible }) => {
   return (
-    <View style={styles.inputContainer}>
-      <TextInput
-        placeholder="Course Goal"
-        style={styles.input}
-        onChangeText={onChange}
-        value={enteredGoal}
-      />
-      <Button title="ADD" onPress={onAdd} />
-    </View>
+    <Modal visible={visible} animationType="fade">
+      <View style={styles.inputContainer}>
+        <TextInput
+          placeholder="Course Goal"
+          style={styles.input}
+          onChangeText={onChange}
+          value={enteredGoal}
+        />
+        <Button title="ADD" onPress={onAdd} />
+      </View>
+    </Modal>
   );
 };
 

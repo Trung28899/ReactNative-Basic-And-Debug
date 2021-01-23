@@ -133,3 +133,14 @@
   +, See ./components/GoalItem.js
   +, With TouchableOpacity, we are able to set activeOpacity
   which is the opacity when item is clicked
+
+7. 9th Commit:
+   Delete Item in List and Adding A Modal
+
+- Delete Item in List:
+  +, App.js: See removeGoalHandler()
+  +, ./components/GoalItem.js: See onPress and onDelete
+
+- Show Modal:
+  +, App.js: see how isAddMode state is managed
+  +, ./components/GoalInput.js: see the Modal component
