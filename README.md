@@ -85,13 +85,13 @@
 
 2.  4th Commit: StyleSheet Objects
 
-    - StyleSheet Objects currently is no different than
-      JavaScript Object. But in the future, this may
-      bring more optimized performance to the application.
+        - StyleSheet Objects currently is no different than
+        JavaScript Object. But in the future, this may
+        bring more optimized performance to the application.
 
-      => Doesn't hurt to use and good practice
+        => Doesn't hurt to use and good practice
 
-    - See App.js, Video 26
+        - See App.js, Video 26
 
 3.  5th Commit: State and Events Management
 
@@ -103,44 +103,44 @@
 
 4.  6th Commit: Rendering List
 
-    - See App.js, Video 28 - 30
-    - Notice how to render list just like React.js
-      (Key and Content with different Components)
-    - Notice ScrollView: this allow the list to be scrollable
+        - See App.js, Video 28 - 30
+        - Notice how to render list just like React.js
+        (Key and Content with different Components)
+        - Notice ScrollView: this allow the list to be scrollable
 
 5.  7th Commit: FlatList
 
-    - Other way of rendering list
-    - Better performance than ScrollView when it comes
-      to a really long list
-    - Things to notice:
-      +, Data array has to have a key item and value item in any child
-      +, keyExtractor extract the key data to automatically
-      assign keys to children
-    - See App.js, Video 31
+        - Other way of rendering list
+        - Better performance than ScrollView when it comes
+        to a really long list
+        - Things to notice:
+        +, Data array has to have a key item and value item in any child
+        +, keyExtractor extract the key data to automatically
+        assign keys to children
+        - See App.js, Video 31
 
 6.  8th Commit:
     Splitting Code into Components and working with Touchable Components
 
-    - Splitting Code into Components:
-      +, See ./components/GoalItem.js and ./components/GoalInput.js:
-      +, See how to pass and manipulate data between components
+        - Splitting Code into Components:
+        +, See ./components/GoalItem.js and ./components/GoalInput.js:
+        +, See how to pass and manipulate data between components
 
-    - Working with Touchable Components:
-      +, onPress event doesn't works on every components
-      +, We oftenly use Touchable components
-      wrap around the View to handle the press event
-      +, See ./components/GoalItem.js
-      +, With TouchableOpacity, we are able to set activeOpacity
-      which is the opacity when item is clicked
+        - Working with Touchable Components:
+        +, onPress event doesn't works on every components
+        +, We oftenly use Touchable components
+        wrap around the View to handle the press event
+        +, See ./components/GoalItem.js
+        +, With TouchableOpacity, we are able to set activeOpacity
+        which is the opacity when item is clicked
 
 7.  9th Commit:
     Delete Item in List and Adding A Modal
 
-    - Delete Item in List:
-      +, App.js: See removeGoalHandler()
-      +, ./components/GoalItem.js: See onPress and onDelete
+        - Delete Item in List:
+        +, App.js: See removeGoalHandler()
+        +, ./components/GoalItem.js: See onPress and onDelete
 
-    - Show Modal:
-      +, App.js: see how isAddMode state is managed
-      +, ./components/GoalInput.js: see the Modal component
+        - Show Modal:
+        +, App.js: see how isAddMode state is managed
+        +, ./components/GoalInput.js: see the Modal component
