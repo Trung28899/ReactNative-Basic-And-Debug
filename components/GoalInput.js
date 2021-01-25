@@ -1,7 +1,19 @@
 import React from "react";
 import { View, TextInput, StyleSheet, Button, Modal } from "react-native";
 
-const GoalInput = ({ onChange, onAdd, enteredGoal, visible }) => {
+const GoalInput = ({
+  onChange,
+  onAdd,
+  enteredGoal,
+  visible,
+  setEnteredGoal,
+  onCancel,
+}) => {
+  const addGoalHandler = () => {
+    onAdd(enteredGoal);
+    setEnteredGoal("");
+  };
+
   return (
     <Modal visible={visible} animationType="fade">
       <View style={styles.inputContainer}>
@@ -11,7 +23,10 @@ const GoalInput = ({ onChange, onAdd, enteredGoal, visible }) => {
           onChangeText={onChange}
           value={enteredGoal}
         />
-        <Button title="ADD" onPress={onAdd} />
+        <View style={styles.buttonStyles}>
+          <Button title="CANCEL" color="red" onPress={onCancel} />
+          <Button title="ADD" onPress={addGoalHandler} />
+        </View>
       </View>
     </Modal>
   );
@@ -19,8 +34,8 @@ const GoalInput = ({ onChange, onAdd, enteredGoal, visible }) => {
 
 const styles = StyleSheet.create({
   inputContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
+    flex: 1,
+    justifyContent: "center",
     alignItems: "center",
   },
   input: {
@@ -28,6 +43,12 @@ const styles = StyleSheet.create({
     borderColor: "black",
     borderWidth: 1,
     padding: 10,
+    marginBottom: 10,
+  },
+  buttonStyles: {
+    flexDirection: "row-reverse",
+    justifyContent: "space-around",
+    width: "60%",
   },
 });
 

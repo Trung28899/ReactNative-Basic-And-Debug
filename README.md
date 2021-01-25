@@ -144,3 +144,9 @@
         - Show Modal:
         +, App.js: see how isAddMode state is managed
         +, ./components/GoalInput.js: see the Modal component
+
+8.  10th Commit:
+    Add more stylings to modal
+
+    - Recommend re-learn Flexbox
+    - Course Goals app completion
