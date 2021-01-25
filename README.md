@@ -148,5 +148,13 @@
 8.  10th Commit:
     Add more stylings to modal
 
-    - Recommend re-learn Flexbox
-    - Course Goals app completion
+        - Recommend re-learn Flexbox
+        - Course Goals app completion
+
+## III. Useful Resources and Links:
+
+        - Official Docs: https://facebook.github.io/react-native/docs/getting-started
+
+        - Overview of available Components & APIs: https://facebook.github.io/react-native/docs/components-and-apis
+
+        - Expo Docs: https://docs.expo.io/versions/latest/
