@@ -158,3 +158,59 @@
         - Overview of available Components & APIs: https://facebook.github.io/react-native/docs/components-and-apis
 
         - Expo Docs: https://docs.expo.io/versions/latest/
+
+---
+
+## SECTION 3: DEBUGGING:
+
+## I. CORE CONCEPTS:
+
+1.  What to Debugs:
+
+        - Error Message / App Crashes:
+            +, Syntax Errors
+            +, Bugs in code (undefined values, wrong types, etc.)
+            +, Unavoidable errors (e.g: Network failing error)
+
+        - Logical Errors:
+            +, Undesired or unexpected app behavior
+            +, Unexpected / Unhandled user behavior
+            +, Sequence of steps lead to errors
+
+        - Styling, Layout & UX:
+            +, Wrong styling, layout
+            +, Inconsistent result on different devices
+            +, Layout doesn't work on certain devices or
+                orientation
+
+2.  How to Debug:
+
+        - Read error messages
+        - Use console.log() to get a feeling for
+            the flow of your code
+        - Chrome Debugger (+ Breakpoints)
+
+3.  Debugger Tools:
+
+        Opening Native Debugger Menu:
+        IOS Emulator: cmd + D
+        Android: cmd or ctrl + m
+        We will see the menu with the options down below
+
+        - Remote Debugger & Breakpoints: see this tools in video 47
+        - Device DevTools Overlay: Video 48
+        - Debugging the UI & Using React Native Debugger:
+            +, cmd + D
+            > 'show element inspector'
+            > now able to inspect UI like in browser
+        - React Native Debugger:
+            +, Bring the same debug experience as chrome dev tool
+            +, open "React Native Debugger"
+            +, Press cmd + T > Confirm the port
+            +, Should be able to see the debugger tool now
+
+## II. USEFUL RESOURCES:
+
+        - Expo Debugging Docs: https://docs.expo.io/versions/v34.0.0/workflow/debugging/
+
+        - Chrome Dev Tools Docs: https://developers.google.com/web/tools/chrome-devtools/

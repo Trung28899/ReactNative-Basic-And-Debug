@@ -13,8 +13,9 @@ export default function App() {
   };
 
   const addGoalHandler = () => {
-    // console.log(enteredGoal);
-    // Best practice for Sync-ability
+    if (enteredGoal.length === 0) {
+      return;
+    }
     setCourseGoals((currentGoals) => [
       ...currentGoals,
       { id: Math.random().toString(), value: enteredGoal },
