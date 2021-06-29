@@ -7,7 +7,7 @@
         - Allow developer to code in javascript and access Native API.
 
         - More about React Native here:
-            https://drive.google.com/file/d/1MUiQ_yv5gk15TtM_daZNFhOqfXvktCE8/view?usp=sharing
+            https://drive.google.com/file/d/1LRnM597UJuZkAl3fHH1Cb3-yMaYopHeQ/view?usp=sharing
 
     2. How Does React Native Work:
 
@@ -15,14 +15,18 @@
 
         - Predefined react native components looks like html tag with <> and a word (First word is Capitalized)
 
-        - Javascript logic is not compiled to Native code.          +, There will be small virtual machine that will be     able to communicate with Native API.
+        - Javascript logic is not compiled to Native code.
+            +, There will be small virtual machine that will be able to communicate with Native API.
             +, Views oftenly are more intensive loading part so able to convert Views to native app boost great performance
 
         - Behind the Scene:
-            https://drive.google.com/file/d/1m-_TI6-HNWSK1RplBYRxhKB_SMDg0XzL/view?usp=sharing
+            https://drive.google.com/file/d/1MMoCFIHmhOQe30I1SuWloeCxVwKJC4AX/view?usp=sharing
+
+            +, UI get compiled while javascript logics are not:
+            https://drive.google.com/file/d/1o0SMqRokp-143cLc6PmMq3rQZlpJi_AO/view?usp=sharing
 
         - More Details:
-            https://drive.google.com/file/d/1drXoXE2OOUZxsnzTT-JsW9LZ3I8jJEAq/view?usp=sharing
+            https://drive.google.com/file/d/1eMO2Nt6ZaSlMasXBZpI0uuO4Yn3ruPSa/view?usp=sharing
 
     3. 2 ways of Creating React Native Projects:
 
@@ -36,7 +40,7 @@
             => Less flexibility but also less headache of managing App development
 
         - How Expo CLI works:
-            https://drive.google.com/file/d/1_K-ncoIWpdoHeVljxw9V5FUOQbtzbCvg/view?usp=sharing
+            https://drive.google.com/file/d/1eW-E6Q06jg_kD6d09iiB2qqmHJOGQo0D/view?usp=sharing
 
         - React Native CLI:
             +, Is bare-bone development set up which is created by React Native Team.

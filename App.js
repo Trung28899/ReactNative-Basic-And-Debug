@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { StyleSheet, View, FlatList, Button } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, View, FlatList } from "react-native";
 import GoalItem from "./components/GoalItem";
 import GoalInput from "./components/GoalInput";
+import Button from "./components/Button";
 
 export default function App() {
   const [enteredGoal, setEnteredGoal] = useState("");
@@ -36,7 +37,7 @@ export default function App() {
 
   return (
     <View style={styles.screen}>
-      <Button title="Add New Goal" onPress={() => setIsAddMode(true)} />
+      <Button title="Add New Goal" pressed={() => setIsAddMode(true)} />
       <GoalInput
         onChange={goalInputHandler}
         onAdd={addGoalHandler}
@@ -64,5 +65,8 @@ const styles = StyleSheet.create({
   screen: {
     padding: 50,
     paddingTop: 80,
+  },
+  buttonStyle: {
+    borderRadius: 15,
   },
 });
